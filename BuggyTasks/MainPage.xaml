@@ -1,10 +1,30 @@
 ﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BuggyTasks.Views.MainPage">
-    <VerticalStackLayout Padding="30">
-        <Button Text="Go to Task List" Clicked="OnGoToTaskList"/>
-        <Button Text="Add New Task" Clicked="OnAddTask"/>
-        <Button Text="Get Location" Clicked="OnGetLocation"/>
-        <Button Text="Device Info" Clicked="OnDeviceInfo"/>
+    <VerticalStackLayout Padding="30"
+                         Spacing="16"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center">
+
+        <Button Text="Go to Task List"
+                WidthRequest="250"
+                Clicked="OnGoToTaskList"
+                 />
+
+        <Button Text="Add New Task"
+                WidthRequest="250"
+                Clicked="OnAddTask"
+                />
+
+        <Button Text="Get Location"
+                WidthRequest="250"
+                Clicked="OnGetLocation"
+                />
+
+        <Button Text="Device Info"
+                WidthRequest="250"
+                Clicked="OnDeviceInfo"
+                />
+
     </VerticalStackLayout>
 </ContentPage>

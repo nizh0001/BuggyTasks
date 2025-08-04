@@ -5,8 +5,21 @@
     <ContentPage.BindingContext>
         <vm:NewTaskViewModel />
     </ContentPage.BindingContext>
-    <VerticalStackLayout>
-        <Entry Placeholder="Enter task" Text="{Binding NewTaskTitle}" />
-        <Button Text="Add Task" Command="{Binding AddTaskCommand}" />
+    
+    <VerticalStackLayout Padding="16"
+                         Spacing="16"
+                         HorizontalOptions="Fill"
+                         VerticalOptions="Start">
+
+        <Entry Placeholder="Enter task"
+               Text="{Binding NewTaskTitle}"
+               HorizontalOptions="Fill"
+        />
+
+        <Button Text="Add Task"
+                Command="{Binding AddNewTaskCommand}"
+                HorizontalOptions="Fill"
+                 />
+
     </VerticalStackLayout>
 </ContentPage>
